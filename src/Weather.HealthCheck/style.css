@@ -1,0 +1,8 @@
+﻿:root {
+    --primaryColor: #8204ff;
+    --secondaryColor: #f4f4f4;
+    --bgMenuActive: #c10fff;
+    --bgButton: #68217a;
+    --logoImageUrl: url('https://bianchini.tech/wp-content/uploads/2023/07/Icone-Branco.png');
+    --bgAside: var(--primaryColor);
+}
