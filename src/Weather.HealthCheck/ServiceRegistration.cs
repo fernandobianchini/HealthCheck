@@ -14,9 +14,11 @@ namespace Weather.HealthCheck
             services
                 .AddHealthChecks()
                     .AddSqlServer(_config.GetConnectionString("defaultConnection"),
-                                    name: "Banco de Dados Principal",
-                                    tags: new[] { "SQL Server", "Local" })
-                    .AddUrlGroup(new Uri("http://api1"), "API 1", tags: new[] { "API" });
+                                  name: "Banco de Dados Principal",
+                                  tags: new[] { "SQL Server", "Local" })
+                    .AddUrlGroup(new Uri("http://api1"), 
+                                 name: "API 1", 
+                                 tags: new[] { "API" });
 
             services
                 .AddHealthChecksUI(options =>
